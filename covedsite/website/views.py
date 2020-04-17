@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from .models import CoreMember
 
+def home(request) :
+	return render(request, 'index.html')
+
 def aboutUs(request) :
 	m = CoreMember.objects.all()
 	members1 = []
@@ -15,3 +18,13 @@ def aboutUs(request) :
 		if '3' in c :
 			members3.append(mem)
 	return render(request, 'aboutUs.html', {'members1' : members1, 'members2' : members2, 'members3' : members3})
+
+def mentor(request) :
+	return render(request, 'mentorSignUp.html')
+
+def student(request) :
+	return render(request, 'studentSignUp.html')
+
+def resources(request) :
+	return render(request, 'resources.html')
+

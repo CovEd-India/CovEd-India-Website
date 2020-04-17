@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <title>
@@ -7,13 +8,13 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="styles/index.css" rel="stylesheet">
-        <link href="styles/responsiveIndex.css" rel="stylesheet">
+        <link href="{% static 'index.css' %}" rel="stylesheet">
+        <link href="{% static 'responsiveIndex.css' %}" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="index.js"></script>
-        <link href="styles/faq.css" rel="stylesheet">
-        <link href="styles/nav.css" rel="stylesheet">
-        <link rel="shortcut icon" href="./assets/favicongolden-removebg.png">
+        <script src="{% static 'index.js' %}"></script>
+        <link href="{% static 'faq.css' %}" rel="stylesheet">
+        <link href="{% static 'nav.css' %}" rel="stylesheet">
+        <link rel="shortcut icon" href="{% static 'assets/favicongolden-removebg.png' %}">
     </head>
     <body>
         <!-- NAV BAR CODE STARTS -->
@@ -22,7 +23,7 @@
         
                 <div class="navLogox">
                     
-                    <img src="./assets/favicongolden-removebg.png" alt="logo" id="covedIMG">
+                    <img src=" {% static '/assets/favicongolden-removebg.png' %}" alt="logo" id="covedIMG">
                     <div id="covedNAV">CovEd India</div>
         
                 </div>
@@ -59,7 +60,7 @@
             <div class="content">
                 <div class="titlepage" id="titlepage">
                     <div id="covedindia">
-                        <img src="assets/covedindia.png" id="covedindiaimg">
+                        <img src="{% static 'assets/covedindia.png' %}" id="covedindiaimg">
                         <div class="titlebuttons">
                             
                             <input type="button" class="tpbtn" id="studenttpbtn" value="Interested Students">
@@ -116,7 +117,7 @@
                             <div class="applycontent" id="studentcontent">
                                 <div class="steps" id="steps1">
                                     <div class="imgsteps">
-                                        <img src="assets/clippad.png" class="icons" id="icons1">
+                                        <img src="{% static 'assets/clippad.png' %}" class="icons" id="icons1">
                                     </div>
 
                                     <div class="stepcontent">
@@ -136,7 +137,7 @@
 
                                 <div class="steps" id="steps2">
                                     <div class="imgsteps">
-                                        <img src="assets/graphs.png" class="icons" id="icons2">
+                                        <img src="{% static 'assets/graphs.png' %}" class="icons" id="icons2">
                                     </div>
 
                                     <div class="stepcontent">
@@ -154,7 +155,7 @@
 
                                 <div class="steps" id="steps3">
                                     <div class="imgsteps">
-                                        <img src="assets/book.png" class="icons" id="icons3">
+                                        <img src="{% static 'assets/book.png' %}" class="icons" id="icons3">
                                     </div>
 
                                     <div class="stepcontent">
@@ -172,7 +173,7 @@
 
                                 <div class="steps" id="steps5">
                                     <div class="imgsteps">
-                                        <img src="assets/bulb.png" class="icons" id="icons5">
+                                        <img src="{% static 'assets/bulb.png' %}" class="icons" id="icons5">
                                     </div>
 
                                     <div class="stepcontent">
@@ -200,7 +201,7 @@
                             <div class="applycontent" id="mentorcontent">
                                     <div class="steps" id="stepm1">
                                         <div class="imgsteps">
-                                            <img src="assets/clippad.png" class="icons" id="iconm1">
+                                            <img src="{% static 'assets/clippad.png' %}" class="icons" id="iconm1">
                                         </div>
         
                                         <div class="stepcontent">
@@ -221,7 +222,7 @@
         
                                     <div class="steps" id="stepm2">
                                         <div class="imgsteps">
-                                            <img src="assets/graphs.png" class="icons" id="iconm2">
+                                            <img src="{% static 'assets/graphs.png' %}" class="icons" id="iconm2">
                                         </div>
         
                                         <div class="stepcontent">
@@ -239,7 +240,7 @@
         
                                     <div class="steps" id="stepm3">
                                         <div class="imgsteps">
-                                            <img src="assets/book.png" class="icons" id="iconm3">
+                                            <img src="{% static 'assets/book.png' %}" class="icons" id="iconm3">
                                         </div>
         
                                         <div class="stepcontent">
@@ -258,7 +259,7 @@
         
                                     <div class="steps" id="stepm4">
                                         <div class="imgsteps">
-                                            <img src="assets/bulb.png" class="icons" id="iconm4">
+                                            <img src="{% static 'assets/bulb.png' %}" class="icons" id="iconm4">
                                         </div>
         
                                         <div class="stepcontent">
@@ -363,19 +364,19 @@
         
                                 <div class="contactGrid">
                                     <div class="contactItems" id="contact1">
-                                        <img src="assets/gmailIcon.png" width="35px" height="auto" id="fmail">
+                                        <img src="{% static 'assets/gmailIcon.png' %}" width="35px" height="auto" id="fmail">
                                         <a href="mailto:covedindia@gmail.com" class="contactLinks">
                                             <b> covedindia@gmail.com</b>
                                         </a>
                                     </div>
                                     <div class="contactItems" id="contact2">
-                                        <img src="assets/facebook.png" width="25px" height="auto" id="ffb">
+                                        <img src="{% static 'assets/facebook.png' %}" width="25px" height="auto" id="ffb">
                                         <a href="https://www.facebook.com/CovEd-India-105360627792093/" class="contactLinks">
                                             <b> &ensp;Facebook</b>
                                         </a>
                                     </div>
                                     <div class="contactItems" id="contact3">
-                                        <img src="assets/instagram.png" width="35px" height="auto" id="finsta">
+                                        <img src="{% static 'assets/instagram.png' %}" width="35px" height="auto" id="finsta">
                                         <a href="https://www.instagram.com/covedindia/?igshid=byec8gpb97es" class="contactLinks">
                                             <b> Instagram</b>
                                         </a>
