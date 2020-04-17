@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>CovEd India | The Team</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="{% static 'assets/favicongolden-removebg.png' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'aboutUs.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'nav.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="{% static 'aboutUs.js' %}"></script>
+    </head>
+
+    <body>
+        <!-- NAV BAR CODE STARTS -->
+        <div class="navContainerx" id="navContainerx">
+            <div class="navx">
+        
+                <div class="navLogox">
+                    
+                    <img src="{% static 'assets/favicongolden-removebg.png' %}" alt="logo" id="covedIMG">
+                    <div id="covedNAV">CovEd India</div>
+        
+                </div>
+        
+                <div class="navLinksx">
+                    <a class="navLinkx" id="aboutusLink">About Us</a>
+                    <a class="navLinkx" id="signupLink">Sign Up</a>
+                    <a class="navLinkx" id="resourcesLink">Resources</a>
+                    <a class="navLinkx" id="teamLink">Our Team</a>
+                    <a class="navLinkx" id="faqLink">FAQ</a>
+                    <a class="navLinkx" id="contactusLink">Contact Us</a>
+                    
+                    <div id="nav-icon3">
+                        <span class="s"></span>
+                        <span class="s"></span>
+                        <span class="s"></span>
+                        <span class="s"></span>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div id="sidenavx" class="sidenavx">
+              <a id="aboutusLinkS">About Us</a>
+              <a id="studentsLinkS">For Students</a>
+              <a id="mentorsLinkS">For Mentors</a>
+              <a id="resourcesLinkS">Resources</a>
+              <a id="teamLinkS">Our Team</a>
+              <a id="faqLinkS">FAQ</a>
+              <a id="contactusLinkS">Contact Us</a>
+          </div>
+        <!-- NAV BAR CODE ENDS -->
+        <div class="coreHead">CovEd Core Team</div>
+        <div class="container">
+            <div id="containerL1" class="LeftHeads">Communication and Data Handling</div>
+            <div id="containerR1">
+                <table class="tableOfMembers">
+                    <colgroup>
+                        <col span="1" style="width: 30%;">
+                        <col span="1" style="width: 40%;">
+                        <col span="1" style="width: 40%;">
+                     </colgroup>
+                    <tbody>
+                        {% for member in members1 %}
+                            <tr>
+                                <td class="name">member.fullname</td>
+                                <td>member.college</td>
+                                <td>member.branch</td>
+                            </tr>
+                        {% endfor %}}
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="containerL2" class="LeftHeads">Web Dev and Technology</div>
+            <div id="containerR2">
+                <table class="tableOfMembers">
+                    <colgroup>
+                        <col span="1" style="width: 30%;">
+                        <col span="1" style="width: 40%;">
+                        <col span="1" style="width: 40%;">
+                     </colgroup>
+                    <tbody>
+                        {% for member in members2 %}
+                            <tr>
+                                <td class="name">member.fullname</td>
+                                <td>member.college</td>
+                                <td>member.branch</td>
+                            </tr>
+                        {% endfor %}}
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="containerL3" class="LeftHeads">Outreach and management</div>
+            <div id="containerR3">
+                <table class="tableOfMembers">
+                    <colgroup>
+                        <col span="1" style="width: 30%;">
+                        <col span="1" style="width: 40%;">
+                        <col span="1" style="width: 40%;">
+                     </colgroup>
+                    <tbody>
+                        {% for member in members3 %}
+                            <tr>
+                                <td class="name">member.fullname</td>
+                                <td>member.college</td>
+                                <td>member.branch</td>
+                            </tr>
+                        {% endfor %}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="coreFootCont">
+            <div class="coreFoot" id="coreFoot1">
+                30 Team Members
+            </div>
+            <div class="coreFoot" id="coreFoot2">
+                200+ mentors
+            </div>
+        </div>
+    </body>
+</html>

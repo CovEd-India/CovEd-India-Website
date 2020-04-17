@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CovEd India | Registration</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="styles/nav.css" rel="stylesheet">
+        <link href="./styles/mSignUp.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="./assets/favicongolden-removebg.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="resources.ks"></script>
+        <script>
+
+            function checkWhere(){
+                var x = window.location.href;
+
+                var y = x.split('/');
+                var z = y[y.length - 1];
+
+                if(z == "studentSignUp.html"){
+                    document.getElementById("msiNavButton1").classList.add("active");
+                }else if(z == "mentorSignUp.html"){
+                    document.getElementById("msiNavButton2").classList.add("active");
+                }else if(z == "resForm.html"){
+                    document.getElementById("msinavButton3").classList.add("active");
+                }
+            }
+            function autoScrolling() {
+                window.scrollTo(0,document.body.scrollHeight);
+            }
+
+            setInterval(
+                function(){
+                    checkWhere();
+                }
+            ,1000);
+
+            setTimeout(function(){
+                autoScrolling();
+            }, 2000);
+            
+        </script>
+        <link rel="shortcut icon" href="./assets/favicongolden.png">
+    </head>
+
+    <body>
+        <!-- NAV BAR CODE STARTS -->
+        <div class="navContainerx" id="navContainerx">
+            <div class="navx">
+        
+                <div class="navLogox">
+                    
+                    <img src="./assets/favicongolden-removebg.png" alt="logo" id="covedIMG">
+                    <div id="covedNAV">CovEd India</div>
+                    <script src="resources.js"></script>
+                    
+                </div>
+        
+                <div class="navLinksx">
+                    <a class="navLinkx" id="aboutusLink">About Us</a>
+                    <a class="navLinkx" id="signupLink">Sign Up</a>
+                    <a class="navLinkx" id="resourcesLink">Resources</a>
+                    <a class="navLinkx" id="teamLink">Our Team</a>
+                    <a class="navLinkx" id="faqLink">FAQ</a>
+                    <a class="navLinkx" id="contactusLink">Contact Us</a>
+                    
+                    <div id="nav-icon3">
+                        <span class="s"></span>
+                        <span class="s"></span>
+                        <span class="s"></span>
+                        <span class="s"></span>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div id="sidenavx" class="sidenavx">
+              <a id="aboutusLinkS">About Us</a>
+              <a id="studentsLinkS">For Students</a>
+              <a id="mentorsLinkS">For Mentors</a>
+              <a id="resourcesLinkS">Resources</a>
+              <a id="teamLinkS">Our Team</a>
+              <a id="faqLinkS">FAQ</a>
+              <a id="contactusLinkS">Contact Us</a>
+          </div>
+        <!-- NAV BAR CODE ENDS -->
+
+
+        <div class="msiContainer">
+            <div class="lowNav">
+                <div class="msiNavBar">
+                    <div id="msiNavButton1">
+                        <a href="studentSignUp.html"><h2>Student</h2></a>
+                    </div>
+                    <div id="msiNavButton2">
+                        <a href="mentorSignUp.html"><h2>Mentor</h2></a>
+                    </div>
+                    <div id="msiNavButton3">
+                        <a href="resForm.html"><h2>Resources</h2></a>
+                    </div>
+                </div>
+
+                <div class="resmsiNavBar">
+                    <a href="studentSignUp.html"><h2>Want to be a mentor? Tap me!</h2></a><br>
+                    <a href="resForm.html"><h2>Have good resources? Tap me!</h2></a>
+                </div>
+
+            </div>
+
+            <div class="msiHolder">
+                <br><br>
+
+                <h3>Student Registration</h3>
+                <br>
+                Want to learn something new? Please register here.
+
+                <br><br>
+            </div>
+        </div>
+        <div class="respIframe">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScd_OOcv1FZO_394vMcsuoz5gIfILqQu1ppLZK0nobGYjhk0Q/viewform?embedded=true" class="msiIframe">Loading…</iframe>
+        </div>
+    </body>
+</html>

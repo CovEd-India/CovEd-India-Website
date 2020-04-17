@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); /*font-family: 'Quicksand', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); /* font-family: 'Montserrat', sans-serif; */ 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*font-family: 'Bebas Neue', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap'); 
+
+
+@media only screen and (max-width: 1250px){
+
+    #covedindia{
+        position: relative;
+        bottom: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titlebuttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+    .tpbtn:hover{
+        background-color: #f2f2f2;
+        opacity: 1;
+    }
+    
+    .tpbtn:focus{
+        transition: 0s;
+        box-shadow: none;
+    }
+
+      .signupcolumns{
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 48fr 1fr 48fr;
+        width: 100%;
+        align-self: center;
+        height: auto;
+    }
+
+    .or{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        grid-row: 2 / span 1;
+        grid-column: 1;
+    }
+    .bar{
+        background-color: #A4A4A4;
+        height: 2px;
+    }
+    
+    #signupbar{
+        width: 90%;
+        height: 2px;
+
+    }
+
+    
+    .applyingsignup{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #studentsignup{
+        grid-column: 1;
+        grid-row: 1 / span 1;
+    }
+    
+    #mentorsignup{
+        grid-row: 3 / span 1;
+        grid-column: 1;
+    }
+    
+    .steps{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        justify-content: start;
+    }
+
+    .icons{
+        width: 100px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    #iconm4 , #icons5 {
+        width: 80px;
+        margin-left: 0px;
+    }
+
+    .applycontent{
+        margin-top: 10px;
+        width: 85%;
+        height: auto;
+    }
+    
+    .stepsdivider{
+        width: 80%;
+        
+    }
+
+
+    .aboutus{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #whoweare{
+        margin-top: 0px;     
+    }
+
+    
+    #aboutusbar{
+        width: 70%;
+        height: 2px;
+        margin: 20px auto;
+    }
+
+    .we{ 
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px auto;
+        align-self: center;
+    }
+
+    .stepcontent{
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 1250px) and (orientation: portrait){
+    #covedindiaimg{
+        align-self: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tpbtn{
+        margin: 10px auto;
+        width: 230px;
+        height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1250px) and (orientation: landscape){
+    #covedindiaimg{
+        align-self: center;
+        width: 90%;
+        margin-bottom: -10px;
+    }
+
+    .tpbtn{
+        margin: 10px auto;
+        width: 230px;
+        height: 50px;
+    }
+}

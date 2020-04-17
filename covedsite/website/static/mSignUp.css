@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.msiContainer{
+    width:100%;
+    display:grid;
+    grid-template: 2.67em 3.33em 1fr / 1fr 800px 1fr;
+}
+.msiHolder{
+    grid-area: 3 / 2 / 4 / 3;
+    text-align:center;
+    font-size: 0.67em;
+}
+.lowNav{
+    grid-area: 2 / 2 / 3 / 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msiNavBar{
+    height:50%;
+    width:100%;
+    display:grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.resmsiNavBar{
+    display:none;
+}
+.msiNavBar a, .resmsiNavBar a{
+    color:black;
+    text-decoration: none;
+}
+h2, h3{
+    font-size: 0.67rem;
+}
+#msiNavButton1{
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#msiNavButton2{
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#msiNavButton3{
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    border-bottom: 3px solid black;
+}
+.msiIframe{
+    width:700px;
+    height:90%;
+    border:none;
+    position: absolute;
+}
+.respIframe{
+    display: flex;
+    justify-content: center;
+}
+
+/*responsive*/
+@media only screen and (max-width: 810px){
+    .msiNavBar{
+        display: none;
+    }
+    .resmsiNavBar{
+        display: block;
+        text-align: center;
+        font-size: 0.67em;
+    }
+    .resmsiNavBar a{
+        color:rgb(67, 68, 0);
+    }
+    .msiContainer{
+        width:100%;
+        display:grid;
+        grid-template: 2.67em 3.33em 1fr / 1fr;
+        height:auto;
+    }
+    .msiHolder{
+        grid-area: 3 / 1 / 4 / 2;
+        text-align:center;
+        padding:0.166667em;
+        height:auto;
+    }
+    .lowNav{
+        grid-area: 2 / 1 / 3 / 2;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .msiIframe{
+        width: 100%;     
+    }
+}
