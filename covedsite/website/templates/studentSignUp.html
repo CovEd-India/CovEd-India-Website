@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-
+{% load static %}
 <html>
     <head>
         <title>CovEd India | Registration</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="styles/nav.css" rel="stylesheet">
-        <link href="./styles/mSignUp.css" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="./assets/favicongolden-removebg.png">
+        <link href="{% static 'nav.css' %}" rel="stylesheet">
+        <link href="{% static 'mSignUp.css' %}" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="{% static 'assets/favicongolden-removebg.png' %}">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="resources.ks"></script>
+        <script src="{% static 'resources.js' %}"></script>
         <script>
 
             function checkWhere(){
                 var x = window.location.href;
 
                 var y = x.split('/');
-                var z = y[y.length - 1];
+                var z = y[y.length - 2];
 
-                if(z == "studentSignUp.html"){
+                if(z == "studentSignUp"){
                     document.getElementById("msiNavButton1").classList.add("active");
-                }else if(z == "mentorSignUp.html"){
+                }else if(z == "mentorSignUp"){
                     document.getElementById("msiNavButton2").classList.add("active");
-                }else if(z == "resForm.html"){
+                }else if(z == "resForm"){
                     document.getElementById("msinavButton3").classList.add("active");
                 }
             }
@@ -42,7 +42,7 @@
             }, 2000);
             
         </script>
-        <link rel="shortcut icon" href="./assets/favicongolden.png">
+        <link rel="shortcut icon" href="{% static 'assets/favicongolden.png' %}">
     </head>
 
     <body>
@@ -52,9 +52,9 @@
         
                 <div class="navLogox">
                     
-                    <img src="./assets/favicongolden-removebg.png" alt="logo" id="covedIMG">
+                    <img src="{% static 'assets/favicongolden-removebg.png' %}" alt="logo" id="covedIMG">
                     <div id="covedNAV">CovEd India</div>
-                    <script src="resources.js"></script>
+                    <script src="{% static 'resources.js' %}"></script>
                     
                 </div>
         
@@ -91,19 +91,19 @@
             <div class="lowNav">
                 <div class="msiNavBar">
                     <div id="msiNavButton1">
-                        <a href="studentSignUp.html"><h2>Student</h2></a>
+                        <a href="/studentSignUp"><h2>Student</h2></a>
                     </div>
                     <div id="msiNavButton2">
-                        <a href="mentorSignUp.html"><h2>Mentor</h2></a>
+                        <a href="/mentorSignUp"><h2>Mentor</h2></a>
                     </div>
                     <div id="msiNavButton3">
-                        <a href="resForm.html"><h2>Resources</h2></a>
+                        <a href="/resForm"><h2>Resources</h2></a>
                     </div>
                 </div>
 
                 <div class="resmsiNavBar">
-                    <a href="studentSignUp.html"><h2>Want to be a mentor? Tap me!</h2></a><br>
-                    <a href="resForm.html"><h2>Have good resources? Tap me!</h2></a>
+                    <a href="/studentSignUp"><h2>Want to be a mentor? Tap me!</h2></a><br>
+                    <a href="/resForm"><h2>Have good resources? Tap me!</h2></a>
                 </div>
 
             </div>

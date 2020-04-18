@@ -1,3 +1,4 @@
+{% load static %}
 <html>
  <head>
   <title>
@@ -11,8 +12,8 @@
   <link href="jqueryui/jquery-ui.css" rel="stylesheet"/>
   <link href="jqueryui/jquery-ui.structure.css" rel="stylesheet"/>
   <link href="jqueryui/jquery-ui.theme.css" rel="stylesheet"/>
-  <link href="styles/resources.css" rel="stylesheet"/>
-  <link href="styles/nav.css" rel="stylesheet">
+  <link href="{% static 'resources.css' %}" rel="stylesheet"/>
+  <link href="{% static 'nav.css' %}" rel="stylesheet">
   <!-- <link rel="stylesheet" href="stylesheet-navbar.css"> -->
   <script src="jquery.js">
   </script>
@@ -27,8 +28,8 @@
   <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
   </script>
   <!-- <script src="addInView.js"></script> -->
-  <script src="resources.js"> </script>
-  <link rel="shortcut icon" href="./assets/favicongolden-removebg.png">
+  <script src="{% static 'resources.js' %}"> </script>
+  <link rel="shortcut icon" href="{% static '/assets/favicongolden-removebg.png' %}">
 
  </head>
  <body>
@@ -38,7 +39,7 @@
 
         <div class="navLogox">
             
-            <img src="./assets/favicongolden-removebg.png" alt="logo" id="covedIMG">
+            <img src="{% static 'assets/favicongolden-removebg.png' %}" alt="logo" id="covedIMG">
             <div id="covedNAV">CovEd India</div>
 
         </div>

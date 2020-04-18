@@ -64,11 +64,11 @@ $("document").ready(function(){
 
 
     $("#enrolbtn").on('click', function(){
-        window.location = "studentSignUp.html";
+        window.location = "/studentSignUp";
     });
 
     $("#joinusbtn").on('click', function(){
-        window.location = "mentorSignUp.html";
+        window.location = "/mentorSignUp";
     });
 
     $('#studenttpbtn').on('click', function(){
@@ -123,19 +123,19 @@ $("document").ready(function(){
     });
 
     $('#resourcesLinkS').on('click', function(){
-        window.location="resources.html"
+        window.location="/resources"
     });
 
     $('#resourcesLink').on('click', function(){
-        window.location="resources.html"
+        window.location="/resources"
     });
 
     $('#teamLinkS').on('click', function(){
-        window.location="aboutUs.html"
+        window.location="/aboutUs"
     });
 
     $('#teamLink').on('click', function(){
-        window.location="aboutUs.html"
+        window.location="/aboutUs"
     });
 
     /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */

@@ -11,7 +11,7 @@
     /* scroll-behavior: smooth; */
 }
 body{
-    background-image: url("{% static 'assets/aboutUsBG.jpeg' %}");
+    background-image: url("assets/aboutUsBG.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

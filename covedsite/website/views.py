@@ -28,3 +28,12 @@ def student(request) :
 def resources(request) :
 	return render(request, 'resources.html')
 
+def studentSignUp(request) :
+	return render(request, 'studentSignUp.html')
+
+def mentorSignUp(request) :
+	return render(request, 'mentorSignUp.html')
+
+def resForm(request) :
+	return render(request, 'resForm.html')
+

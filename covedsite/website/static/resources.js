@@ -26,27 +26,27 @@ $("document").ready(function(){
     
 
     $("#covedNAV").on('click', function(){
-        window.location="index.html";
+        window.location="/";
     });
 
     $("#covedIMG").on('click', function(){
-		window.location="index.html";
+		window.location="/";
     });
 
     $('#aboutusLink').on('click', function(){
-		window.location="https://covedindia.org/#aboutus"
+		window.location="/#aboutus"
     });
 
     $('#signupLink').on('click', function(){
-		window.location="https://covedindia.org/#signup"
+		window.location="/#signup"
     });
 
     $('#contactusLink').on('click', function(){
-		window.location="https://covedindia.org/#contactus"
+		window.location="/#contactus"
     });
 
     $('#faqLink').on('click', function(){
-		window.location="https://covedindia.org/#faq"
+		window.location="/#faq"
     });
 
     var sideopen = false;
@@ -62,41 +62,41 @@ $("document").ready(function(){
     });
 
     $('#aboutusLinkS').on('click', function(){
-		window.location="https://covedindia.org/#aboutus"
+		window.location="/#aboutus"
 
     });
 
     $('#studentsLinkS').on('click', function(){
-		window.location="https://covedindia.org/#studentsignup"
+		window.location="/#studentsignup"
     });
 
     $('#mentorsLinkS').on('click', function(){
-		window.location="https://covedindia.org/#mentorsignup"
+		window.location="/#mentorsignup"
     });
 
     $('#contactusLinkS').on('click', function(){
-		window.location="https://covedindia.org/#contactus"
+		window.location="/#contactus"
 
     });
 
     $('#faqLinkS').on('click', function(){
-		window.location="https://covedindia.org/#faq"
+		window.location="/#faq"
 	});
 	
 	$('#resourcesLinkS').on('click', function(){
-        window.location="resources.html"
+        window.location="/resources"
     });
 
     $('#resourcesLink').on('click', function(){
-        window.location="resources.html"
+        window.location="/resources"
     });
 
     $('#teamLinkS').on('click', function(){
-      window.location="aboutUs.html"
+      window.location="/aboutUs"
   });
 
   $('#teamLink').on('click', function(){
-      window.location="aboutUs.html"
+      window.location="/aboutUs"
   });
 
 
