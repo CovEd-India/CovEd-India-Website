@@ -25,7 +25,7 @@ SECRET_KEY = '8fq@)8dph2s@i^8=llc+@zyy#5#6^(_f=pmd9i8@=8vlf-bpg3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['covedindia.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
