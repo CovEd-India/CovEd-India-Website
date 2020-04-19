@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Muli:wght@200;400;700&display=swap');
+/* font-family: 'Manrope', sans-serif; */
+/* font-family: 'Muli', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color:white;
+    font-family: 'Muli', sans-serif;
+    /* scroll-behavior: smooth; */
+}
+body{
+    background-image: url("assets/aboutUsBG.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.coreHead{
+    width:100%;
+    background-color: white;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #002244;
+    height:1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+.container{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 300px 700px 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    width:100%;
+    margin-top: 4em;
+}
+#containerL1{
+    grid-area: 2 / 2 / 3 / 3;
+}
+.LeftHeads{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 1em;
+}
+#containerR1{
+    grid-area: 2 / 3 / 3 / 4;
+}
+.tableOfMembers{
+    width:100%;
+    border-collapse: collapse;
+    margin: 2em;
+}
+.tableOfMembers td{
+    font-size:0.6em;
+    font-weight:200;
+    border-bottom: 1px solid white;
+    padding:0.5em;
+}
+.tableOfMembers td.name{
+    font-weight: 700;
+    color:white;
+}
+#containerL2{
+    grid-area: 3 / 2 / 4 / 3;
+}
+#containerR2{
+    grid-area: 3 / 3 / 4 / 4;
+}
+#containerL3{
+    grid-area: 4 / 2 / 5 / 3;
+}
+#containerR3{
+    grid-area: 4 / 3 / 5 / 4;
+}
+.coreFootCont{
+    display:grid;
+    grid-template: 1fr / 1fr 1fr;
+    background-color: #002244;
+    width:100%;
+}
+.coreFoot{
+    width:100%;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #ff914d;
+    height:1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#coreFoot1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+#coreFoot2{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+@media only screen and (max-width: 1250px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    #containerL1{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    #containerR1{
+        grid-area: 2 / 1 / 3 / 2;
+        display: flex;
+        justify-content: center;
+    }
+    #containerL2{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    #containerR2{
+        grid-area: 4 / 1 / 5 / 2;
+        display: flex;
+        justify-content: center;
+    }
+    #containerL3{
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    #containerR3{
+        grid-area: 6 / 1 / 7 / 2;
+        display: flex;
+        justify-content: center;
+    }
+    .tableOfMembers{
+        width:85%;
+        margin:0.1em;
+    }
+    .coreFootCont{
+        grid-template: 1fr 1fr / 1fr;
+        margin-top: 3em;
+    }
+    #coreFoot1{
+        grid-area: 1 / 1 / 2 / 2;
+        border-bottom: 1px solid white;
+    }
+    #coreFoot2{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+}
